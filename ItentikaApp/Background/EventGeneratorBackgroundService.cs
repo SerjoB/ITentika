@@ -23,7 +23,7 @@ public class EventGeneratorBackgroundService : BackgroundService
         while (!clt.IsCancellationRequested)
         {
             // WAITING INTERVAL
-            var waitMs = _random.Next(6000000, 2000000000);
+            var waitMs = _random.Next(0, 2000);
             await Task.Delay(waitMs, clt);
 
             var evt = _generator.GenerateRandomEvent();
