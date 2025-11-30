@@ -31,6 +31,12 @@ cd ITentika\ItentikaApp
 }
 ```
 
+Создайте БД командой:
+
+```bash
+dotnet ef database update
+```
+
 Убедитесь, что база данных существует и PostgreSQL запущен локально.
 
 Пример запуска программы:
